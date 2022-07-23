@@ -19,6 +19,7 @@ const SecComp = () => {
       });
 
     console.log(name);
+    console.log();
   }, [flag]); //hook
   // Mount => first load / on load => []
   // Update => first load / on load => [drink]

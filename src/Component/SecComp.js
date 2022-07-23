@@ -18,7 +18,7 @@ const SecComp = () => {
         setRes(response.title);
       });
 
-    // console.log(name);
+    console.log(name);
   }, [flag]); //hook
   // Mount => first load / on load => []
   // Update => first load / on load => [drink]

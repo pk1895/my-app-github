@@ -12,17 +12,15 @@ const SecComp = () => {
   };
 
   useEffect(() => {
-    // console.log(name);
-    const fetchData = () => {
-      fetch("https://jsonplaceholder.typicode.com/todos/1")
-        .then((res) => res.json())
-        .then((response) => {
-          alert("Fetch function called.");
-          console.log(response);
-          setRes(response.title);
-        });
-    };
-    fetchData();
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        setRes(response.title);
+      });
+
+    console.log(name);
+    console.log();
   }, [flag]); //hook
   // Mount => first load / on load => []
   // Update => first load / on load => [drink]

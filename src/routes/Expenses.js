@@ -1,4 +1,12 @@
+import { useLocation } from "react-router-dom";
+
 const Expenses = () => {
-    return <><p>Expenses</p></>;
- };
+  const location = useLocation();
+  return (
+    <>
+      <p>Expenses</p>
+      <p>{location.state.name}</p>
+    </>
+  );
+};
 export default Expenses;

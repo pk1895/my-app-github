@@ -1,11 +1,12 @@
 import { useRef } from "react";
 
 const ThirdComp = (props) => {
-  console.log("Thri Component Loaded..."); //{compName: 'Ojassoft'}
+  // console.log("Thri Component Loaded..."); //{compName: 'Ojassoft'}
   const inputElement = useRef();
   const onUpdate = () => {
-    debugger;
-    console.log(inputElement);
+    // debugger;
+    // console.log(inputElement.current.value);
+    props.callbackFunc(inputElement.current.value);
   };
   return (
     <>
